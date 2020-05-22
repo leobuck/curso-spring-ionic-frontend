@@ -1,3 +1,4 @@
+import { CategoriasPage } from './../categorias/categorias';
 import { AuthService } from './../../services/auth.service';
 import { CredenciaisDTO } from './../../models/credenciais.dto';
 import { Component } from '@angular/core';
@@ -34,7 +35,7 @@ export class HomePage {
   login() {
     this.auth.authenticate(this.creds).subscribe(response => {
       this.auth.successfulLogin(response.headers.get('Authorization'));
-      this.navCtrl.setRoot('CategoriasPage');
+      this.navCtrl.setRoot(CategoriasPage);
     }, error => {});    
   }
   

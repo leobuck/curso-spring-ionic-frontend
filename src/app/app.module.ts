@@ -1,3 +1,6 @@
+import { ProfilePage } from './../pages/profile/profile';
+import { HomePage } from './../pages/home/home';
+import { CategoriasPage } from './../pages/categorias/categorias';
 import { StorageService } from './../services/storage.service';
 import { AuthService } from './../services/auth.service';
 import { ErrorInterceptorProvider } from './../interceptors/error-interceptor';
@@ -14,7 +17,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 @NgModule({
   declarations: [
-    MyApp
+    MyApp,
+    CategoriasPage,
+    HomePage,
+    ProfilePage
   ],
   imports: [
     BrowserModule,
@@ -23,7 +29,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp
+    MyApp,
+    CategoriasPage,
+    HomePage,
+    ProfilePage
   ],
   providers: [
     StatusBar,
