@@ -1,3 +1,4 @@
+import { HomePage } from './../home/home';
 import { API_CONFIG } from './../../config/api.config';
 import { ClienteService } from './../../services/domain/cliente.service';
 import { StorageService } from './../../services/storage.service';
@@ -28,7 +29,13 @@ export class ProfilePage {
           this.cliente = response;
           this.getImageIfExists();
         },
-        error => {});
+        error => {
+          if (error.status == 403) {
+            this.navCtrl.setRoot(HomePage);
+          }
+        });
+    } else {
+      this.navCtrl.setRoot(HomePage);
     }
   }
 
