@@ -1,3 +1,5 @@
+import { EstadoService } from './../services/domain/estado.service';
+import { CidadeService } from './../services/domain/cidade.service';
 import { SignupPage } from './../pages/signup/signup';
 import { AuthInterceptorProvider } from './../interceptors/auth-interceptor';
 import { ClienteService } from './../services/domain/cliente.service';
@@ -48,7 +50,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ErrorInterceptorProvider,
     AuthService,
     StorageService,
-    ClienteService
+    ClienteService,
+    CidadeService,
+    EstadoService
   ]
 })
 export class AppModule {}
