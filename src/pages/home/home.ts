@@ -1,3 +1,4 @@
+import { SignupPage } from './../signup/signup';
 import { CategoriasPage } from './../categorias/categorias';
 import { AuthService } from './../../services/auth.service';
 import { CredenciaisDTO } from './../../models/credenciais.dto';
@@ -44,6 +45,10 @@ export class HomePage {
       this.auth.successfulLogin(response.headers.get('Authorization'));
       this.navCtrl.setRoot(CategoriasPage);
     }, error => {});    
+  }
+
+  signup() {
+    this.navCtrl.push(SignupPage);
   }
   
 }

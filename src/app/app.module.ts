@@ -1,3 +1,4 @@
+import { SignupPage } from './../pages/signup/signup';
 import { AuthInterceptorProvider } from './../interceptors/auth-interceptor';
 import { ClienteService } from './../services/domain/cliente.service';
 import { ProfilePage } from './../pages/profile/profile';
@@ -22,7 +23,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     CategoriasPage,
     HomePage,
-    ProfilePage
+    ProfilePage,
+    SignupPage
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     CategoriasPage,
     HomePage,
-    ProfilePage
+    ProfilePage,
+    SignupPage
   ],
   providers: [
     StatusBar,
