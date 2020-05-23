@@ -1,3 +1,4 @@
+import { ClienteService } from './../services/domain/cliente.service';
 import { ProfilePage } from './../pages/profile/profile';
 import { HomePage } from './../pages/home/home';
 import { CategoriasPage } from './../pages/categorias/categorias';
@@ -41,7 +42,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CategoriaService,
     ErrorInterceptorProvider,
     AuthService,
-    StorageService
+    StorageService,
+    ClienteService
   ]
 })
 export class AppModule {}
