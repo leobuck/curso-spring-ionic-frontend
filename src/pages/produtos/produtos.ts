@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ProdutoService } from '../../services/domain/produto.service';
 import { ProdutoDetailPage } from '../produto-detail/produto-detail';
+import { CartPage } from '../cart/cart';
 
 @IonicPage()
 @Component({
@@ -43,5 +44,9 @@ export class ProdutosPage {
 
   showDetail(produto_id: string) {
     this.navCtrl.push(ProdutoDetailPage, {produto_id: produto_id});
+  }
+
+  goCart() {
+    this.navCtrl.push(CartPage);
   }
 }

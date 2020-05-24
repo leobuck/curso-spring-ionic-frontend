@@ -1,3 +1,4 @@
+import { CartPage } from './../cart/cart';
 import { ProdutosPage } from './../produtos/produtos';
 import { API_CONFIG } from './../../config/api.config';
 import { CategoriaDTO } from './../../models/categoria.dto';
@@ -33,5 +34,9 @@ export class CategoriasPage {
 
   showProdutos(categoria_id: string) {
     this.navCtrl.push(ProdutosPage, {categoria_id: categoria_id});
+  }
+
+  goCart() {
+    this.navCtrl.push(CartPage);
   }
 }
