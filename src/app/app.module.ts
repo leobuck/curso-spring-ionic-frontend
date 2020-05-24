@@ -22,6 +22,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ProdutoService } from '../services/domain/produto.service';
 import { ProdutoDetailPage } from '../pages/produto-detail/produto-detail';
+import { CartService } from '../services/domain/cart.service';
+import { CartPage } from '../pages/cart/cart';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { ProdutoDetailPage } from '../pages/produto-detail/produto-detail';
     ProfilePage,
     SignupPage,
     ProdutosPage,
-    ProdutoDetailPage
+    ProdutoDetailPage,
+    CartPage
   ],
   imports: [
     BrowserModule,
@@ -46,7 +49,8 @@ import { ProdutoDetailPage } from '../pages/produto-detail/produto-detail';
     ProfilePage,
     SignupPage,
     ProdutosPage,
-    ProdutoDetailPage
+    ProdutoDetailPage,
+    CartPage
   ],
   providers: [
     StatusBar,
@@ -60,7 +64,8 @@ import { ProdutoDetailPage } from '../pages/produto-detail/produto-detail';
     ClienteService,
     CidadeService,
     EstadoService,
-    ProdutoService
+    ProdutoService,
+    CartService
   ]
 })
 export class AppModule {}
