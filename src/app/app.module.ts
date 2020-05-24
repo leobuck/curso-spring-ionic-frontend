@@ -1,3 +1,4 @@
+import { ProdutosPage } from './../pages/produtos/produtos';
 import { EstadoService } from './../services/domain/estado.service';
 import { CidadeService } from './../services/domain/cidade.service';
 import { SignupPage } from './../pages/signup/signup';
@@ -26,7 +27,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CategoriasPage,
     HomePage,
     ProfilePage,
-    SignupPage
+    SignupPage,
+    ProdutosPage
   ],
   imports: [
     BrowserModule,
@@ -39,7 +41,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CategoriasPage,
     HomePage,
     ProfilePage,
-    SignupPage
+    SignupPage,
+    ProdutosPage
   ],
   providers: [
     StatusBar,
