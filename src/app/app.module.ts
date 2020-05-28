@@ -27,6 +27,7 @@ import { ProdutoDetailPage } from '../pages/produto-detail/produto-detail';
 import { CartService } from '../services/domain/cart.service';
 import { CartPage } from '../pages/cart/cart';
 import { OrderConfirmationPage } from '../pages/order-confirmation/order-confirmation';
+import { PedidoService } from '../services/domain/pedido.service';
 
 @NgModule({
   declarations: [
@@ -74,7 +75,8 @@ import { OrderConfirmationPage } from '../pages/order-confirmation/order-confirm
     CidadeService,
     EstadoService,
     ProdutoService,
-    CartService
+    CartService,
+    PedidoService
   ]
 })
 export class AppModule {}
