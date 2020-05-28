@@ -6,6 +6,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { API_CONFIG } from '../../config/api.config';
 import { CartService } from '../../services/domain/cart.service';
 import { ProdutoDTO } from '../../models/produto.dto';
+import { PickAdressPage } from '../pick-adress/pick-adress';
 
 @IonicPage()
 @Component({
@@ -59,4 +60,9 @@ export class CartPage {
   goOn() {
     this.navCtrl.setRoot(CategoriasPage);
   }
+
+  checkout() {
+    this.navCtrl.push(PickAdressPage);
+  }
+
 }

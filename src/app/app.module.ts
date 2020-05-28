@@ -1,3 +1,4 @@
+import { PickAdressPage } from './../pages/pick-adress/pick-adress';
 import { ProdutosPage } from './../pages/produtos/produtos';
 import { EstadoService } from './../services/domain/estado.service';
 import { CidadeService } from './../services/domain/cidade.service';
@@ -34,7 +35,8 @@ import { CartPage } from '../pages/cart/cart';
     SignupPage,
     ProdutosPage,
     ProdutoDetailPage,
-    CartPage
+    CartPage,
+    PickAdressPage
   ],
   imports: [
     BrowserModule,
@@ -50,7 +52,8 @@ import { CartPage } from '../pages/cart/cart';
     SignupPage,
     ProdutosPage,
     ProdutoDetailPage,
-    CartPage
+    CartPage,
+    PickAdressPage
   ],
   providers: [
     StatusBar,
