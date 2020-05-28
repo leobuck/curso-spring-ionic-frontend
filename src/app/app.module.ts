@@ -1,3 +1,4 @@
+import { PaymentPage } from './../pages/payment/payment';
 import { PickAdressPage } from './../pages/pick-adress/pick-adress';
 import { ProdutosPage } from './../pages/produtos/produtos';
 import { EstadoService } from './../services/domain/estado.service';
@@ -36,7 +37,8 @@ import { CartPage } from '../pages/cart/cart';
     ProdutosPage,
     ProdutoDetailPage,
     CartPage,
-    PickAdressPage
+    PickAdressPage,
+    PaymentPage
   ],
   imports: [
     BrowserModule,
@@ -53,7 +55,8 @@ import { CartPage } from '../pages/cart/cart';
     ProdutosPage,
     ProdutoDetailPage,
     CartPage,
-    PickAdressPage
+    PickAdressPage,
+    PaymentPage
   ],
   providers: [
     StatusBar,
