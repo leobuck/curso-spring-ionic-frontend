@@ -26,6 +26,7 @@ import { ProdutoService } from '../services/domain/produto.service';
 import { ProdutoDetailPage } from '../pages/produto-detail/produto-detail';
 import { CartService } from '../services/domain/cart.service';
 import { CartPage } from '../pages/cart/cart';
+import { OrderConfirmationPage } from '../pages/order-confirmation/order-confirmation';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { CartPage } from '../pages/cart/cart';
     ProdutoDetailPage,
     CartPage,
     PickAdressPage,
-    PaymentPage
+    PaymentPage,
+    OrderConfirmationPage
   ],
   imports: [
     BrowserModule,
@@ -56,7 +58,8 @@ import { CartPage } from '../pages/cart/cart';
     ProdutoDetailPage,
     CartPage,
     PickAdressPage,
-    PaymentPage
+    PaymentPage,
+    OrderConfirmationPage
   ],
   providers: [
     StatusBar,

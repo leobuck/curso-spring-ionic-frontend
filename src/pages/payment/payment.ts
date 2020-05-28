@@ -1,3 +1,4 @@
+import { OrderConfirmationPage } from './../order-confirmation/order-confirmation';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { PedidoDTO } from './../../models/pedido.dto';
 import { Component } from '@angular/core';
@@ -22,8 +23,6 @@ export class PaymentPage {
 
     this.pedido = this.navParams.get('pedido');
 
-    console.log(this.pedido);
-
     this.formGroup = this.formBuilder.group({
       numeroDeParcelas: [1, Validators.required],
       "@type": ["pagamentoComCartao", Validators.required]
@@ -32,7 +31,7 @@ export class PaymentPage {
 
   nextPage() {
     this.pedido.pagamento = this.formGroup.value;
-    console.log(this.pedido);
+    this.navCtrl.setRoot(OrderConfirmationPage, {pedido: this.pedido});
   }
 
 }
