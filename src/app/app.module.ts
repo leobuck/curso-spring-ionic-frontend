@@ -29,6 +29,7 @@ import { CartService } from '../services/domain/cart.service';
 import { CartPage } from '../pages/cart/cart';
 import { OrderConfirmationPage } from '../pages/order-confirmation/order-confirmation';
 import { PedidoService } from '../services/domain/pedido.service';
+import { ImageUtilService } from '../services/image-util.service';
 
 @NgModule({
   declarations: [
@@ -78,7 +79,8 @@ import { PedidoService } from '../services/domain/pedido.service';
     ProdutoService,
     CartService,
     PedidoService,
-    Camera
+    Camera,
+    ImageUtilService
   ]
 })
 export class AppModule {}
