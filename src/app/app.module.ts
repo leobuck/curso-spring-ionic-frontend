@@ -17,6 +17,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { Camera } from '@ionic-native/camera'
 
 import { MyApp } from './app.component';
 
@@ -76,7 +77,8 @@ import { PedidoService } from '../services/domain/pedido.service';
     EstadoService,
     ProdutoService,
     CartService,
-    PedidoService
+    PedidoService,
+    Camera
   ]
 })
 export class AppModule {}
